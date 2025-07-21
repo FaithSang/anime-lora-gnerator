@@ -26,6 +26,17 @@ Web UI built using Gradio
 
 ## 📁 Folder structure
 
+lora-anime-cleaned/
+├── app.py # Gradio app
+├── model/
+│ └── adapter_model.safetensors
+├── notebooks/
+│ └── lora Anime.ipynb # LoRA training script
+├── images/ # Output sample images
+├── requirements.txt
+└── README.md
+
+lora-anime-cleaaned/
 notebooks/ Colab fine-tuning scripts
 app/ > Gradio web app
 images/> Downloaded and sample outputs
@@ -33,14 +44,24 @@ model/ > Link to trained weights and config
 
 ## 🧪Links
 
-Hugging face dataset : 'ppbrown/danbooru-cleaned'
-Gradio Space : [TRY App] (https://huggingface.co/spaces/FaySang/LoRA-anime)
+> Hugging face dataset : 'ppbrown/danbooru-cleaned'
+> Gradio Space : [TRY App] (https://huggingface.co/spaces/FaySang/LoRA-anime)
+
+## Sample output links
+
+> Some sample outplut links showing the prompt, relevant scales and the output image
+
+> (https://faysang-lora-anime.hf.space/?__theme=system&deep_link=tyVHbS96T9Y)
+> (https://faysang-lora-anime.hf.space/?__theme=system&deep_link=TtdYZOJUqGg)
+> (https://faysang-lora-anime.hf.space/?__theme=system&deep_link=JyLjiRRkXKM)
+> (https://faysang-lora-anime.hf.space/?__theme=system&deep_link=UYibWPIOEU8)
 
 # 🧪Training details
 
 **Base Model**: 'runwayml/stable-diffusion-v1-5'
 **Dataset**: [ppbrown/danbooru-cleaned] (https://huggingface.co/datasets/ppbrown/danbooru-cleaned)
-**LoRA Adapter** Fine-tuned usng "peft" with 100 anime face images
+**LoRA Adapter**
+Fine-tuned usng "peft" with 100 anime face images
 
 # 🚀How it works
 
@@ -52,18 +73,19 @@ Gradio Space : [TRY App] (https://huggingface.co/spaces/FaySang/LoRA-anime)
 # 👾Set up locally
 
 ''bash
-got clone https://github.com/FaithSang/anime-lora-gnerator.git
-cd lora-anime
-pip install -r requirements.txt
-python app.py
+
+> git clone https://github.com/FaithSang/>anime-lora-gnerator.git
+> cd lora-anime
+> pip install -r requirements.txt
+> python app.py
 
 ## Tools ussed
 
-Hugging Face Diffusers
-PEFT LoRA Adapter
-Gradio Web App
-Google Colab for training
-Danbooru-style Anime Dataset
+> Hugging Face Diffusers
+> PEFT LoRA Adapter
+> Gradio Web App
+> Google Colab for training
+> Danbooru-style Anime Dataset
 
 ## Author
 
